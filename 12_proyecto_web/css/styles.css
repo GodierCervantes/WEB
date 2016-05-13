@@ -34,8 +34,7 @@
 
 #Encabezado h1 { 
     font-size: 1.2em; 
-    text-decoration: underline;
-        display: block;
+    text-decoration: underline;   
 }
 #Encabezado h2 { font-size: 1em;   }
 #Encabezado h3 { font-size: 0.9em; }
@@ -48,11 +47,21 @@
 #Contenido {
     
 }
-
+/* nota importante de inicio */
 #Nota-Importante {
-    height: 300px;
-    background-color: darkblue;
+    height: 360px;
+    margin: 20px 0;
+    /* box-shadow: horizontal vertical blur color  */
+    box-shadow: 0 0 15px grey ;
 }
+
+#Nota-Importante img{
+    border: 10px solid white;
+}
+
+
+
+/* nota importante fin */
 
 #Notas-Secundarias {
     height: 300px;
@@ -80,18 +89,24 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    background-color: grey;    
+}
+#menu ul {
+    padding: 0;
 }
 
 #menu li { 
     list-style-type: none;
     padding: 0;
     display: inline-block;
+    
 }
 
 #menu li a {
     text-decoration: none;
     color: black;
     font: inherit;
+    
 }
 
 #menu>ul>li {
@@ -101,6 +116,7 @@
 #menu>ul>li>a {
     padding: 10px;
     background-color:grey;
+    
 }    
 
 #menu li ul {
@@ -110,4 +126,4 @@
 #menu>ul>li>a:hover {
     background-color: lightgray;
     transition: 0.2s;
-}
+} 
