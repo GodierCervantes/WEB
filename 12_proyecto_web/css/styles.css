@@ -6,6 +6,12 @@
     margin: 10px;
 } */
 
+/* reset css */
+h1,h2,h3,h4,h5,h6,figure,p{
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 920px;
     margin: 0 auto;
@@ -39,7 +45,7 @@
 #Encabezado h2 { font-size: 1em;   }
 #Encabezado h3 { font-size: 0.9em; }
 #Encabezado h4 { font-size: 0.8em; }
-#Menu {
+#menu {
     height:  50px;
     background-color: brown;
 }
@@ -57,22 +63,54 @@
 
 #Nota-Importante img{
     border: 10px solid white;
+    
 }
-
 
 
 /* nota importante fin */
 
-#Notas-Secundarias {
-    height: 300px;
+/*NOTA SECUNDARIA INICIO*/
+#Notas-Secundarias{
+    min-height: 300px;
     width: 700px;
     display: inline-block;
     float: left;
-    background-color: darkorange;
+    }
+#Notas-Secundarias article{
+    display: flex;
+    
+}
+.imagen-nota-secundaria{
+    position: relative;
 }
 
+.imagen-nota-secundaria span{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+
+.titulo-nota-secundaria{
+    line-height: 0.9em;
+    font-variant: small-caps;
+    
+}
+
+.intro-nota-secundaria {
+    padding: 20px 0px;
+    text-align: justify;
+
+}
+.cuerpo-nota-secundaria {
+    padding: 0px 20px;
+}
+    
+/*NOTA SECUNDARIA FIN*/
+
 #Publicidad {
-    height: 300px;
+    min-height: 300px;
     width: 220px;
     display: inline-block;
     float: right;
@@ -123,7 +161,25 @@
     display: none;
 }
 
-#menu>ul>li>a:hover {
+#menu>ul>li>a:hover {    
     background-color: lightgray;
     transition: 0.2s;
 } 
+/* div para hacer el "boton" de leer mas */
+.boton {
+    background: #AA3521;
+    display: inline-block;
+    padding: 2px;
+    box-shadow: 0px 2px 3px darkgray;
+}
+
+.boton>div {
+    padding: 0px 20px;
+    border: .4px solid rgba(255,255,255,.3);
+}
+
+.boton p{
+    color: white;
+    font-variant: small-caps;
+    font-size: .9em;
+}
